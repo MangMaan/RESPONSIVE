@@ -11,7 +11,7 @@
 .ham::before{content:'';position: absolute; top: 0.78125vw; right: 0; width: 2.5vw; height: 2px; background: #000;}
 .ham::after{content:'';position: absolute; top: -0.78125vw; right: 0; width: 2.5vw; height: 2px; background: #000;}
 .ham_wrap:hover .ham{width: 2vw;}
-.gnb{position:fixed;top:0; left:0;width:100vw; height: 100vh; background: #A4A4A4; z-index: 999999;}
+.gnb{position:fixed;top:0; left:0;width:100vw; height: 100vh; background: #A4A4A4; z-index: 9999;}
 .gnb .search{border: 1px solid #000;width: 31.25%; height: 2.60416666vw; position: absolute; top: 10.6770833vw; left: 50%; transform: translateX(-50%); text-align: center; color: #707070;}
 .gnb .close_wrap{position: absolute; top: 12vw; right: 31%; cursor: pointer;}
 .gnb .close_wrap .close{width: 25px; height: 2px; background: #fff; font-size: 0; transform: rotate(45deg);position: relative;}
