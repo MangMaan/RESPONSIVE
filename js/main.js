@@ -22,7 +22,7 @@ $(document).ready(function () {
         arrows: false,
         infinite: true,
     })
-    $('.acne,.acne1,.acne2,.acne3').slick({
+    $('.acne,.acne1,.acne2,.acne3,#event').slick({
         autoplay: true,
         dots: false,
         arrows: false,

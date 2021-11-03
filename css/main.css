@@ -1,16 +1,17 @@
 @charset "utf-8";
 
-#header{width: 100%; height: 100px; text-align: center;}
-#header h1{padding-top: 18px; padding-bottom: 32px;}
+#header{width: 100%; height: 5.20833%; text-align: center;}
+#header h1{padding-top: 0.9375%; padding-bottom: 1.66666%;}
 
-.util{position: fixed; top: 20.83333vw; left: -6.5104%; transform: rotate(90deg);vertical-align: inherit;flex-wrap: wrap;z-index: 19;} /* top 400px * left: -20px/
+.util{position: fixed; top: 40.83333%; left: -6.5104%; transform: rotate(90deg);vertical-align: inherit;flex-wrap: wrap;z-index: 19;} /* top 400px * left: -20px/
 /* rotate 사용시 position 값을 주고 사용하면 위치값이 벗어나지 않아서 보이지 않는 것을 수정할 수있음 gnb 사용시 유의 */
-.util li{padding:10px 0;vertical-align: middle; /* text-align: text-align: -webkit-match-parent;  */display: inline-block; margin-left: 15px; font-size: 1rem; font-weight: 600;}
-.ham_wrap{position: fixed; top: 20.8333vw; right: 1VW;}
+.util li{padding:10px 0;vertical-align: middle; /* text-align: text-align: -webkit-match-parent;  */display: inline-block; margin-left: 0.78125vw; font-size: 1rem; font-weight: 600;}
+.ham_wrap{position: fixed; top: 20.8333vw; right: 1VW; z-index: 999;}
 .ham{position:relative;width: 1.5vw;height:2px; font-size: 0; background: #000;transition: width 0.5s; cursor: pointer;}
 .ham::before{content:'';position: absolute; top: 0.78125vw; right: 0; width: 2.5vw; height: 2px; background: #000;}
 .ham::after{content:'';position: absolute; top: -0.78125vw; right: 0; width: 2.5vw; height: 2px; background: #000;}
 .ham_wrap:hover .ham{width: 2vw;}
+
 .gnb{position:fixed;top:0; left:0;width:100vw; height: 100vh; background: #A4A4A4; z-index: 9999;}
 .gnb .search{border: 1px solid #000;width: 31.25%; height: 2.60416666vw; position: absolute; top: 10.6770833vw; left: 50%; transform: translateX(-50%); text-align: center; color: #707070;}
 .gnb .close_wrap{position: absolute; top: 12vw; right: 31%; cursor: pointer;}
@@ -30,20 +31,21 @@
 #banner .slick-dots{position: absolute; bottom: 4%; left: 50%; transform: translateX(-50%);}
 #banner .slick-dots li{float: left; width: 10px; height: 10px; border-radius: 50%; background: transparent; border: 1px solid #999; padding: 0; margin: 0 5px;}
 #banner .slick-dots li button{font-size: 0; border: 0; background: transparent; color: transparent; width: 0; height: 0; padding: 0; margin: 0;}
-#banner .slick-dots .slick-active{background: #000; padding: 0; border-radius: 50%;margin: 0 5px;}
-.items{width:89.58333333vw;margin: 0 auto; position: relative; margin-bottom: 150px;}
+#banner .slick-dots .slick-active{background: #000; padding: 0; border-radius: 50%;margin: 0 0.26041666vw;}
+.items{width:89.58333333vw;margin: 0 auto; position: relative; margin-bottom: 7.8125%;}
 .items li a img{width: 100%;}
-.items .slick-slide{width: 19.791666666vw; margin: 0 10px;}
+.items .slick-slide{width: 19.791666666vw; margin: 0 0.52083%;}
 .items .slick-prev{position: absolute; top: 50%; left: 2.6041666%; font-size: 0;background: url(../ITEMS/prev.png) no-repeat center center; width: 2.08333333333VW; height: 2.08333333333vw; background-color: transparent; border: 0; z-index: 99; transform: translateY(-50%);} 
 .items .slick-next{position: absolute; right: 2.6041666%; top: 50%; font-size: 0;background: url(../ITEMS/NEXT.png) no-repeat center center; width: 2.08333333333VW; height: 2.08333333333vw; background-color: transparent; border: 0; z-index: 99;transform: translateY(-50%);}
 
 #visual{width: 89.58333vw; height: 33.8541666666666vw; margin: 0 auto; margin-bottom: 7.8125%; display: flex; justify-content: space-between;}
-#visual .visual1{width: 57.2916666666vw; margin-right: 2.08333vw; position: relative;}
+#visual .visual1{width: 57.29166vw; position: relative;}
 #visual .visual1 a img{width: 100%; display: block;}
-#visual .visual2{width: 29.6875vw;display: inline-flex; flex-wrap: wrap;align-items:flex-end;;}
+#visual .visual2{width: 29.6875vw;display: flex; flex-wrap: wrap;flex-direction: column;}
 #visual .visual2 li:first-child{height: 7.083333333vw;}
 #visual .visual2 li a img{width: 100%;display: block;}
-#visual .visual2 .visual3{margin-top: 2.0833333333vw;}
+#visual .visual2 .visual3{width: 100%; display: flex; justify-content: space-between; margin-top: 2.60416666vw;}
+#visual .visual2 .visual3 li:first-child{margin-right: 2.604166666%;}
 #visual .visual2 .visual3 li {height: 24.16666666vw;}
 #visual .visual2 .visual3 li a img{height: 100%;}
 .visual1 .slick-dots{position: absolute; bottom: 4%; left: 50%; transform: translateX(-50%);}
@@ -67,4 +69,26 @@
 
 
 #event{width: 100%; height: 31.25vw; background: #999; margin-top: 7.8125%;}
+#event img{width: 100%; height: 31.25vw; display: block;}
+#event .event1{position: relative;}
+#event .event1 a{position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); color: #eee; font-size: 1rem; border: 3px solid #eee; padding: 10px;}
+#event .event1 a:hover  {color: aqua; border: 3px solid aqua;}
 
+#footer{width: 100%; height: 10.416666vw; background: #DFDFDF; margin-top: 7.8125%;}
+#footer .inner{width: 62.5vw; margin: 0 auto; position: relative;}
+#footer .footer_util{position: absolute; top: 1.5625vw; left: 0;}
+#footer .footer_util li{float: left; margin-right: 1.04166vw; position: relative;}
+#footer .footer_util li::before{content: ''; width: 1px; height: 0.8854166vw; position: absolute; top: 0.35625vw; left: -0.520833vw; background: #707070;}
+#footer .footer_util li:first-child::before{content: ''; width: 0; height: 0;}
+#footer .company_wrap{position: absolute; top: 4.270833vw; left: 0;}
+#footer .company_wrap address, .company{color: #707070;}
+#footer .footer_sns{position: absolute; right: 0; top: 1.5625vw;}
+#footer .footer_sns li{float: left;margin-right: 20px; width: 20px; height: 20px; font-size: 0; border-radius: 50%;}
+#footer .footer_sns li:nth-child(3){background: #1da1f2;}
+#footer .footer_sns li:nth-child(2){background: linear-gradient(#f19043,#9b2eba);}
+
+
+@media  all and (max-width:768px) {
+    #footer .inner{display: none;}
+    
+}
