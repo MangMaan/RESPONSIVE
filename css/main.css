@@ -41,16 +41,21 @@
 #banner .slick-dots li{float: left; width: 10px; height: 10px; border-radius: 50%; background: transparent; border: 1px solid #999; padding: 0; margin: 0 5px;}
 #banner .slick-dots li button{font-size: 0; border: 0; background: transparent; color: transparent; width: 0; height: 0; padding: 0; margin: 0;}
 #banner .slick-dots .slick-active{background: #000; padding: 0; border-radius: 50%;margin: 0 0.26041666vw;}
+#banner .mobile_banner{display: none;}
 .items{width:89.5833333vw; height:31.875%;margin: 0 auto; position: relative; margin-bottom: 7.8125%; display: flex; justify-content: space-between;}
 .items .slick-list{margin-right: -2.7041666vw;}
 .items .slick-slide{margin-right: 2.6041666vw;}
 .items .slick-prev{position: absolute; top: 50%; left: 2.6041666%; font-size: 0;background: url(../ITEMS/prev.png) no-repeat center center; width: 2.08333333333VW; height: 2.08333333333vw; background-color: transparent; border: 0; z-index: 99; transform: translateY(-50%);} 
 .items .slick-next{position: absolute; right: 2.6041666%; top: 50%; font-size: 0;background: url(../ITEMS/NEXT.png) no-repeat center center; width: 2.08333333333VW; height: 2.08333333333vw; background-color: transparent; border: 0; z-index: 99;transform: translateY(-50%);}
 .items img{width: 100%; height: 100%;}
-
+@media all and (min-width:769px) and (max-width:1280px){
+    #banner .mobile_banner{display: none;}
+}
 @media all and (max-width: 768px) {
     #banner{width:100%;margin: 0 auto;margin-bottom: 3.90625%;position:relative;} 
     #banner img{width: 100%; display: block;}
+    #banner .pc_banner{display: none;}
+    #banner .mobile_banner{display:block;}
     #banner .slick-dots{position: absolute; bottom: 4%; left: 50%; transform: translateX(-50%);}
     #banner .slick-dots li{float: left; width: 5px; height: 5px; border-radius: 50%; background: transparent; border: 1px solid #fff; padding: 0; margin: 0 0.26041666vw;}
     #banner .slick-dots li button{font-size: 0; border: 0; background: transparent; color: transparent; width: 0; height: 0; padding: 0; margin: 0;}

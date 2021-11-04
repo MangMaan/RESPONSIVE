@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('#banner').slick({
+    $('.pc_banner,.mobile_banner').slick({
         autoplay: true,
         Infinity: true,
         arrows: false,
