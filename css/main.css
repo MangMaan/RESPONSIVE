@@ -60,7 +60,7 @@
     #banner .slick-dots li{float: left; width: 10px; height: 10px; border-radius: 50%; background: transparent; border: 1px solid #fff; padding: 0; margin: 0 0.52vw;}
     #banner .slick-dots li button{font-size: 0; border: 0; background: transparent; color: transparent; width: 0; height: 0; padding: 0; margin: 0;}
     #banner .slick-dots .slick-active{background: #1da1f2; padding: 0; border-radius: 50%;margin: 0 0.52vw;}
-    .items{width:100vw; height:31.875%;margin: 0 auto; position: relative; margin-bottom: 7.8125%; display: flex; justify-content: space-between;}
+    .items{width:100vw; height:100%;margin: 0 auto; position: relative; margin-bottom: 7.8125%; display: flex; justify-content: space-between;}
 }
 
 
