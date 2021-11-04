@@ -52,15 +52,21 @@
     #banner .mobile_banner{display: none;}
 }
 @media all and (max-width: 768px) {
-    #banner{width:100%;margin: 0 auto;margin-bottom: 3.90625%;position:relative;} 
-    #banner img{width:100vw;display: block;}
-    #banner .pc_banner{display: none;}
+    #banner{width:100%;margin: 0 auto;position:relative;} 
+    #banner img{width:100%;display: block;}
+    #banner .pc_banner{display: none; position: relative;}
     #banner .mobile_banner{display:block; height: 100%;}
     #banner .slick-dots{position: absolute; bottom: 4%; left: 50%; transform: translateX(-50%);}
     #banner .slick-dots li{float: left; width: 10px; height: 10px; border-radius: 50%; background: transparent; border: 1px solid #fff; padding: 0; margin: 0 0.52vw;}
     #banner .slick-dots li button{font-size: 0; border: 0; background: transparent; color: transparent; width: 0; height: 0; padding: 0; margin: 0;}
-    #banner .slick-dots .slick-active{background: #1da1f2; padding: 0; border-radius: 50%;margin: 0 0.52vw;}
-    .items{width:100vw; height:100%;margin: 0 auto; position: relative; margin-bottom: 7.8125%; display: flex; justify-content: space-between;}
+    .mobile_banner .slick-next{position: absolute; top: 50%; right: 0%; transform: translateY(-50%); font-size: 0; width: 50px; height: 50px; background: url(../banner/NEXT.png) no-repeat center center transparent;z-index: 19; border: 0;}
+    .mobile_banner .slick-prev{position: absolute; top: 50%; left: 0; transform: translateY(-50%); z-index: 19; font-size: 0; width: 50px; height: 50px; background: url(../banner/prev.png) no-repeat center center transparent; border: 0;}
+    .items{width:100vw; height:100%;margin: 0 auto; position: relative; margin-bottom: 7.8125%;}
+    .items .slick-list{margin-right:0;}
+    .items .slick-slide{margin-right:0;}
+    .items .slick-prev{position: absolute; top: 50%; left: 2.6041666%;width:50px; height: 50px; font-size: 0;background: url(../ITEMS/prev.png) no-repeat center center;background-color: transparent; border: 0; z-index: 20; transform: translateY(-50%);} 
+    .items .slick-next{position: absolute; right: 2.6041666%; top: 50%;width: 50px; height: 50px; font-size: 0;background: url(../ITEMS/NEXT.png) no-repeat center center;background-color: transparent; border: 0; z-index: 20;transform: translateY(-50%);}
+    .items img{width: 100%; height: 100%;}
 }
 
 
@@ -79,6 +85,15 @@
 .visual1 .slick-dots li{float: left; width: 8px; height: 8px; border-radius: 50%; background: transparent; border: 1px solid #ffff; padding: 0; margin: 0 5px;}
 .visual1 .slick-dots li button{font-size: 0; border: 0; background: transparent; color: transparent; width: 0; height: 0; padding: 0; margin: 0;}
 .visual1 .slick-dots .slick-active{background: orange; padding: 0; border-radius: 50%;margin: 0 5px; border: 0;}
+
+/* visual mobile */
+
+@media all and (max-width: 768px){
+    #visual{width: 100vw; height: 100%; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between;}
+    #visual .visual1{width: 100%; position: relative;}
+}
+/* visual mobile */
+
 
 
 #sns {width: 89.5833333333vw; margin: 0 auto;}
@@ -99,8 +114,10 @@
 #event img{width: 100%; height: 31.25vw; display: block;}
 #event .event1{position: relative;}
 #event .event1 a{position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); color: #eee; font-size: 1rem; border: 3px solid #eee; padding: 10px;}
-#event .event1 a:hover  {color: aqua; border: 3px solid aqua;}
-
+@media all and (hover: hover) {
+    #event .event1 a:hover {border: 3px solid aqua; color: aqua;}
+}
+    
 #footer{width: 100%; height: 10.416666vw; background: #DFDFDF; margin-top: 7.8125%;}
 #footer .inner{width: 62.5vw; margin: 0 auto; position: relative;}
 #footer .footer_util{position: absolute; top: 1.5625vw; left: 0;}
