@@ -53,9 +53,9 @@
 }
 @media all and (max-width: 768px) {
     #banner{width:100%;margin: 0 auto;margin-bottom: 3.90625%;position:relative;} 
-    #banner img{width:100vw; height:100vh;display: block;}
+    #banner img{width:100vw;display: block;}
     #banner .pc_banner{display: none;}
-    #banner .mobile_banner{display:block; height: 100vh;}
+    #banner .mobile_banner{display:block; height: 100%;}
     #banner .slick-dots{position: absolute; bottom: 4%; left: 50%; transform: translateX(-50%);}
     #banner .slick-dots li{float: left; width: 10px; height: 10px; border-radius: 50%; background: transparent; border: 1px solid #fff; padding: 0; margin: 0 0.52vw;}
     #banner .slick-dots li button{font-size: 0; border: 0; background: transparent; color: transparent; width: 0; height: 0; padding: 0; margin: 0;}
