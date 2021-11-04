@@ -48,7 +48,7 @@
 .items .slick-next{position: absolute; right: 2.6041666%; top: 50%; font-size: 0;background: url(../ITEMS/NEXT.png) no-repeat center center; width: 2.08333333333VW; height: 2.08333333333vw; background-color: transparent; border: 0; z-index: 99;transform: translateY(-50%);}
 .items img{width: 100%; height: 100%;}
 
-@media all and (max-width:680px) {
+@media all and (max-width: 768px) {
     #banner{width:100%;margin: 0 auto;margin-bottom: 3.90625%;position:relative;} 
     #banner img{width: 100%; display: block;}
     #banner .slick-dots{position: absolute; bottom: 4%; left: 50%; transform: translateX(-50%);}
