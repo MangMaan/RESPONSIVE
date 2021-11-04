@@ -9,13 +9,27 @@ $(document).ready(function () {
 
 
     $('.items').slick({
-        autoplay: true,
+        autoplay: false,
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         dots: false,
         arrows: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                    autoplay: true,
+                }
+            }
+        ]
     });
+
+
     $('.visual1').slick({
         autoplay: true,
         dots: true,
