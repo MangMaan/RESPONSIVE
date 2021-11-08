@@ -76,6 +76,9 @@ body{position: relative;}
 .items img{width: 100%; height: 100%;}
 @media all and (min-width:769px) and (max-width:1280px){
     #banner .mobile_banner{display: none;}
+    .items .slick-prev{position: absolute; top: 50%; left: 2.6041666%; font-size: 0;background: url(../ITEMS/prev.png) no-repeat center center; width: 5.08333333333VW; height: 2.08333333333vw; background-color: transparent; border: 0; z-index: 99; transform: translateY(-50%);} 
+    .items .slick-next{position: absolute; right: 2.6041666%; top: 50%; font-size: 0;background: url(../ITEMS/NEXT.png) no-repeat center center; width: 5.08333333333VW; height: 2.08333333333vw; background-color: transparent; border: 0; z-index: 99;transform: translateY(-50%);}
+
 }
 @media all and (max-width: 768px) {
     #banner{width:100%;margin: 0 auto;position:relative; margin-bottom: 2.6041%;} 
@@ -110,13 +113,26 @@ body{position: relative;}
 #visual .visual2 .mobile_visual2{display: none;}
 #visual .visual3 .mobile_slick{display: none;}
 #visual .visual3 .mobile_visual3{display: none;}
+#visual .tab_visual{display: none;}
 .visual1 .slick-dots{position: absolute; bottom: 4%; left: 50%; transform: translateX(-50%);}
 .visual1 .slick-dots li{float: left; width: 8px; height: 8px; border-radius: 50%; background: transparent; border: 1px solid #ffff; padding: 0; margin: 0 5px;}
 .visual1 .slick-dots li button{font-size: 0; border: 0; background: transparent; color: transparent; width: 0; height: 0; padding: 0; margin: 0;}
 .visual1 .slick-dots .slick-active{background: orange; padding: 0; border-radius: 50%;margin: 0 5px; border: 0;}
-/* visual mobile */
+@media all and (max-width:1028px) and (min-width:769px){
+    #visual .visual1{display: none;}
+    #visual .tab_visual{display: block;}
+    #visual .tab_visual{width: 57.29166vw; position: relative;}
+    #visual .tab_visual a img{width: 100%; display: block;}
+    .tab_visual .slick-dots{position: absolute; bottom: 4%; left: 50%; transform: translateX(-50%);}
+    .tab_visual .slick-dots li{float: left; width: 8px; height: 8px; border-radius: 50%; background: transparent; border: 1px solid #ffff; padding: 0; margin: 0 5px;}
+    .tab_visual .slick-dots li button{font-size: 0; border: 0; background: transparent; color: transparent; width: 0; height: 0; padding: 0; margin: 0;}
+    .tab_visual .slick-dots .slick-active{background: orange; padding: 0; border-radius: 50%;margin: 0 5px; border: 0;}
+}
+/* mobile end */
 
 @media all and (max-width: 768px){
+    #visual .tab_visual{display: none;}
+    #visual .visual1{display: block;}
     #visual{width: 100vw; height: 100%; display: flex;flex-wrap: wrap; align-items: flex-start; justify-content: space-between;}
     #visual .visual1{width: 100%; position: relative;}
     #visual .visual1 img{width: 100%; height: 23.75%;} 

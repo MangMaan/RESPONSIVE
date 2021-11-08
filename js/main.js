@@ -29,13 +29,13 @@ $(document).ready(function () {
             $(this).siblings('li').children('.depth2').hide(1000);
         })
 
-        $('')
     } else {
 
     }
 
 
 
+    /* pc end */
     $('.pc_banner,.mobile_banner').slick({
         autoplay: true,
         Infinity: true,
@@ -84,6 +84,18 @@ $(document).ready(function () {
         arrows: false,
         infinite: true,
     })
+
+    $('.tab_visual').slick({
+        autoplay: true,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: "unslick"
+        }]
+    })
+
     $('.event_wrap').slick({
         autoplay: true,
         dots: false,
