@@ -28,6 +28,8 @@ $(document).ready(function () {
             $(this).children('.depth2').slideDown(1000);
             $(this).siblings('li').children('.depth2').hide(1000);
         })
+
+        $('')
     } else {
 
     }
