@@ -32,6 +32,12 @@
             </div>
         </div>
         <div class="gnb">
+            <ul class="mobile_util">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">SignUp</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">MyPage</a></li>
+            </ul>
             <input type="text" class="search" size="70" value="원하시는 아이템을 검색해주세요. EX) 니트 초록색">
             <div class="close_wrap">
                 <div class="close">닫기</div>
@@ -113,15 +119,21 @@
                 <li class="pc_visual2"><a href="#"><img src="ACC/mosaic.jpg" alt="acc"
                             onmouseenter="this.src='ACC/color.jpg'" onmouseleave="this.src='ACC/mosaic.jpg'"></a>
                 </li>
-                <li class="mobile_visual2"><a href="#"><a href="#"><img src="ACC/color.jpg" alt="color"></a></a>
+                <li class="mobile_visual2"><a href="#"><a href="#"><img src="ACC/color1_1.jpg" alt="color"></a></a>
                 </li>
-                <ul class=" visual3">
-                    <li><a href="#"><img src="ACC/margaret1.jpg" alt="black"
+                <ul class="visual3">
+                    <li class="pc_visual3"><a href="#"><img src="ACC/margaret1.jpg" alt="black"
                                 onmouseenter="this.src='ACC/margaret1_Color.jpg'"
-                                onmouseleave="this.src='ACC/margaret1.jpg'"></a></li>
-                    <li><a href="#"><img src="ACC/DuroOlowu1.jpg" alt="black"
+                                onmouseleave="this.src='ACC/margaret1.jpg'"></a>
+                    </li>
+                    <li class="mobile_visual3"><a href="#"><img src="ACC/margaret1_Color.jpg" alt="mobile_color"></a>
+                    </li>
+                    <li class="pc_visual3"><a href=" #"><img src="ACC/DuroOlowu1.jpg" alt="black"
                                 onmouseenter="this.src='ACC/DuroOlowu1_Color.jpg'"
-                                onmouseleave="this.src='ACC/DuroOlowu1.jpg'"></a></li>
+                                onmouseleave="this.src='ACC/DuroOlowu1.jpg'"></a>
+                    </li>
+                    <li class="mobile_visual3"><a href="#"><img src="ACC/DuroOlowu1_Color.jpg" alt="mobile_color"></a>
+                    </li>
                 </ul>
             </ul>
         </section>
@@ -130,26 +142,26 @@
         <section id="sns" class="clearfix">
             <ul class="sns_wrap">
                 <li class="acne"><a href="#"><img src="sns/acneitem.jpg"></a>
-                    <img src="sns/acnefront.jpg">
-                    <img src="sns/acneback.jpg">
-                    <img src="sns/acneside.jpg">
+                    <img src="sns/acnefront.jpg" class="mobile_sns">
+                    <img src="sns/acneback.jpg" class="mobile_sns">
+                    <img src="sns/acneside.jpg" class="mobile_sns">
                 </li>
                 <li class="acne1"><a href="#"><img src="sns/acnecoat.jpg" alt="acne coat"></a>
-                    <a href="#"><img src="sns/acnecoatF.jpg" alt="acne coat"></a>
-                    <a href="#"><img src="sns/acnecoatB.jpg" alt="acne coat"></a>
-                    <a href="#"><img src="sns/acnecoatS.jpg" alt="acne coat"></a>
+                    <a href="#"><img src="sns/acnecoatF.jpg" alt="acne coat" class="mobile_sns"></a>
+                    <a href="#"><img src="sns/acnecoatB.jpg" alt="acne coat" class="mobile_sns"></a>
+                    <a href="#"><img src="sns/acnecoatS.jpg" alt="acne coat" class="mobile_sns"></a>
                 </li>
                 <li class="acne2">
                     <a href="#"><img src="sns/acnepant.jpg" alt="acne pants"></a>
-                    <a href="#"><img src="sns/acnepantF.jpg" alt="acne pants"></a>
-                    <a href="#"><img src="sns/acnepantB.jpg" alt="acne pants"></a>
-                    <a href="#"><img src="sns/acnepantS.jpg" alt="acne pants"></a>
+                    <a href="#"><img src="sns/acnepantF.jpg" alt="acne pants" class="mobile_sns"></a>
+                    <a href="#"><img src="sns/acnepantB.jpg" alt="acne pants" class="mobile_sns"></a>
+                    <a href="#"><img src="sns/acnepantS.jpg" alt="acne pants" class="mobile_sns"></a>
                 </li>
                 <li class="acne3">
                     <a href="#"><img src="sns/acnebinne.jpg" alt="acne binne"></a>
-                    <a href="#"><img src="sns/acnebinneF.jpg" alt="acne binne"></a>
-                    <a href="#"><img src="sns/acnebinneF1.jpg" alt="acne binne"></a>
-                    <a href="#"><img src="sns/acnebinne1.jpg" alt="acne binne"></a>
+                    <a href="#"><img src="sns/acnebinneF.jpg" alt="acne binne" class="mobile_sns"></a>
+                    <a href="#"><img src="sns/acnebinneF1.jpg" alt="acne binne" class="mobile_sns"></a>
+                    <a href="#"><img src="sns/acnebinne1.jpg" alt="acne binne" class="mobile_sns"></a>
                 </li>
                 <li class="last"> <a href="#"><img src="sns/acnestore.jpg" alt="acne binne">
                         <dl>
@@ -162,10 +174,17 @@
         </section>
 
         <section id="event" class="clearfix">
-            <img src="event/acnebanner(com).jpg" alt="acnebanner">
-            <div class="event1"><img src="event/banner1.jpg" alt="acnebanner">
-                <a href="#">Click To Go ESC_STUDIO</a>
+            <div class="event_wrap">
+                <div class="pc_event"> <img src="event/acnebanner(com).jpg" alt="acnebanner"></div>
+                <div class="event1 pc_event"><img src="event/banner1.jpg" alt="acnebanner">
+                    <a href="#">Click To Go ESC_STUDIO</a>
+                </div>
             </div>
+            <div class="mobile_wrap">
+                <div class="mobile_event"><img src="event/mobile_banner.jpg" alt="mobile_event"></div>
+                <div class="mobile_event"><img src="event/mobile_banner.jpg" alt="mobile_event"></div>
+            </div>
+
         </section>
 
 

@@ -1,4 +1,38 @@
 $(document).ready(function () {
+    if (window.matchMedia("(max-width: 768px)").matches) {
+
+        $('.mobile_wrap').slick({
+            autoplay: true,
+            dots: false,
+            arrows: false,
+            infinite: true,
+        })
+        $('.visual3').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            autoplay: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+        $('.sns_wrap').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            autoplay: true,
+            slidesToScroll: 1,
+            slidesToShow: 1
+        })
+        $('.depth2').hide();
+        $('.gnb1>li').click(function () {
+            $(this).children('.depth2').slideDown(1000);
+            $(this).siblings('li').children('.depth2').hide(1000);
+        })
+    } else {
+
+    }
+
+
 
     $('.pc_banner,.mobile_banner').slick({
         autoplay: true,
@@ -19,7 +53,6 @@ $(document).ready(function () {
             }
         ]
     });
-
 
     $('.items').slick({
         autoplay: false,
@@ -43,29 +76,47 @@ $(document).ready(function () {
         ]
     });
 
-
     $('.visual1').slick({
         autoplay: true,
         dots: true,
         arrows: false,
         infinite: true,
     })
-    $('.acne,.acne1,.acne2,.acne3,#event').slick({
+    $('.event_wrap').slick({
         autoplay: true,
         dots: false,
         arrows: false,
-        infinite: true
-    })
+        infinite: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: "unslick"
+        }]
+    });
 
+    $('.acne,.acne1,.acne2,.acne3').slick({
+        autoplay: true,
+        dots: false,
+        arrows: false,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    autoplay: false
+                }
+            }
+        ]
+    })
 
     $('.gnb').hide();
     $('.ham_wrap').click(function () {
+        $(this).hide();
         $('.gnb').fadeIn();
     })
     $('.close_wrap').click(function () {
         $('.gnb').hide();
+        $('.ham_wrap').fadeIn();
     });
-
 
 
 })/* end */
