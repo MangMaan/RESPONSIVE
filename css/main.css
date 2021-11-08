@@ -128,7 +128,8 @@ body{position: relative;}
     #visual .visual2 li:first-child{height: 9.53125%;}
     #visual .visual2 .mobile_visual2{display: block;margin: 5.2083333% 0;}
     #visual .visual2 .pc_visual2{display: none; background: #f19043;}
-    #visual .visual3 .mobile_visual3{display: block; width: 100%; height: 100%;}
+    #visual .visual3 .mobile_visual3{display: block;}
+    #visual .visual3 .mobile_visual3 img{width: 100%; height: 100%;}
     #visual .visual2 .visual3{display: flex;justify-content: space-between; flex-wrap: wrap;height: 100%;}
     #visual .visual2 .visual3 li{width: 100%}
     #visual .visual2 .visual3 li:first-child{margin-right: 0;}
