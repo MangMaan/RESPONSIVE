@@ -10,7 +10,7 @@ body{position: relative;}
 }
 
 
-.util{position: fixed; top: 40.83333%; left: -6.5104%; transform: rotate(90deg);vertical-align: inherit;flex-wrap: wrap;z-index: 19;} /* top 400px * left: -20px/
+.util{position: fixed; top: 40.83333%; left: -4.9104%; transform: rotate(90deg);vertical-align: inherit;flex-wrap: wrap;z-index: 19;} /* top 400px * left: -20px/
 /* rotate 사용시 position 값을 주고 사용하면 위치값이 벗어나지 않아서 보이지 않는 것을 수정할 수있음 gnb 사용시 유의 */
 .util li{padding:10px 0;vertical-align: middle; /* text-align: text-align: -webkit-match-parent;  */display: inline-block; margin-left: 0.78125vw; font-size: 1rem; font-weight: 600;}
 .ham_wrap{position: fixed; top: 20.8333vw; right: 1VW; z-index: 999;}
